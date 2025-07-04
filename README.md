@@ -20,18 +20,18 @@ This is a sweet and interactive web page made to celebrate a special anniversary
 - ├──README.md
 - ├── index.html  # Main page
 - └── assets/
-  -  ├── css/
-  -  │   └── style.css  # Styling (pink theme, animations)
-  -  ├── images/
-  -  │   ├── love.jpg   # icon image
-  -  │   ├── bf.jpg     # Boyfriend image
-  -  │   └── gf.jpg     # Girlfriend image
-  -  ├── js/
-  -  │   ├── fireworks.js  # Canvas fireworks engine
-  -  │   ├── music.js      # music and counts days
-  -  │   └── script.js     # GSAP
-  -  └── music/
-         └── music.mp3  # Background music
+-  ├── css/
+-  │   └── style.css  # Styling (pink theme, animations)
+-  ├── images/
+-  │   ├── love.jpg   # icon image
+-  │   ├── bf.jpg     # Boyfriend image
+-  │   └── gf.jpg     # Girlfriend image
+-  ├── js/
+-  │   ├── fireworks.js  # Canvas fireworks engine
+-  │   ├── music.js      # music and counts days
+-  │   └── script.js     # GSAP
+-  └── music/
+-         └── music.mp3  # Background music
 
 
 
