@@ -1,111 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Anniversary</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="assets/images/love.png" type="image/love.png" sizes="16x16" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Happy Anniversary" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+  <canvas id="fireworks"></canvas>
+
   <div class="container">
     <h1>💖 Happy Anniversary 💖</h1>
     <p>To my beloved,</p>
     <p class="message">Every moment with you is a treasure. Thank you for being my everything. Here's to many more years together.</p>
+    
     <div class="couple-banner">
-        <img src="bf.jpeg" alt="Boyfriend" class="photo">
-        <h2 class="heart-text">❤️ Lu & Yunn ❤️</h2>
-        <img src="gf.jpg" alt="Girlfriend" class="photo">
+      <!--Change the images to your own photos and change the names to your own names 
+      Example <img src="boyfriend.jpg" alt="Boyfriend" class="photo"> 
+      <img src="girlfriend.jpg" alt="Girlfriend" -->
+
+      <img src="assets/images/bf.jpg" alt="Boyfriend" class="photo" />
+      <h2 class="heart-text">❤️ Me & You ❤️</h2>
+      <img src="assets/images/gf.jpg" alt="Girlfriend" class="photo" />
     </div>
+
     <p id="days-counter" class="days">⏳ Loading days...</p>
-  </div>
-    <div class="anniversary-info">
-    <p id="days-counter">⏳ Loading days...</p>
     <p id="ymd-counter">📅 Loading time passed...</p>
     <p id="next-anniversary">🎉 Calculating next anniversary...</p>
-    </div>
+  </div>
 
-    <audio id="bg-music" loop>
-    <source src="music.mp3" type="audio/mpeg">
+  <audio id="bg-music" loop>
+    <source src="assets/music/music.mp3" type="audio/mpeg" />
     Your browser does not support the audio element.
-    </audio>
+  </audio>
 
-    <button id="start-btn">🎉 Start Celebration</button>
-    <button id="music-toggle" style="display:none;">🔊 Mute</button>
-
-    <script>
-    const music = document.getElementById("bg-music");
-    const startBtn = document.getElementById("start-btn");
-    const toggleBtn = document.getElementById("music-toggle");
-
-    startBtn.onclick = () => {
-        music.volume = 0;
-        music.play().then(() => {
-        // Fade in
-        let vol = 0;
-        const fadeIn = setInterval(() => {
-            if (vol < 0.8) {
-            vol += 0.02;
-            music.volume = vol;
-            } else {
-            clearInterval(fadeIn);
-            }
-        }, 200);
-        startBtn.style.display = "none";
-        toggleBtn.style.display = "inline-block";
-        }).catch(e => {
-        alert("Autoplay blocked. Please interact with the page first.");
-        console.error(e);
-        });
-    };
-
-    toggleBtn.onclick = () => {
-        music.muted = !music.muted;
-        toggleBtn.innerText = music.muted ? "🔈 Unmute" : "🔊 Mute";
-    };
-    </script>
-    <script>
-      //input your annversitory date
-  const startDate = new Date("2023-07-14");
-  const today = new Date();
-
-  // Calculate total days
-  const timeDiff = today - startDate;
-  const totalDays = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-  document.getElementById("days-counter").innerText = `💑 We have been together for ${totalDays} days!`;
-
-  // Calculate years, months, days
-  const getYMD = (start, end) => {
-    let years = end.getFullYear() - start.getFullYear();
-    let months = end.getMonth() - start.getMonth();
-    let days = end.getDate() - start.getDate();
-
-    if (days < 0) {
-      months -= 1;
-      const prevMonth = new Date(end.getFullYear(), end.getMonth(), 0);
-      days += prevMonth.getDate();
-    }
-
-    if (months < 0) {
-      years -= 1;
-      months += 12;
-    }
-
-    return { years, months, days };
-  };
-
-  const ymd = getYMD(startDate, today);
-  document.getElementById("ymd-counter").innerText =
-    `⏰ That's ${ymd.years} year(s), ${ymd.months} month(s), and ${ymd.days} day(s)!`;
-
-  // Calculate countdown to next anniversary
-  const nextAnniversary = new Date(today.getFullYear(), startDate.getMonth(), startDate.getDate());
-  if (nextAnniversary < today) {
-    nextAnniversary.setFullYear(today.getFullYear() + 1);
-  }
-
-  const daysUntil = Math.ceil((nextAnniversary - today) / (1000 * 60 * 60 * 24));
-  document.getElementById("next-anniversary").innerText =
-    `🎉 Only ${daysUntil} day(s) until your next anniversary! 🎈`;
-</script>
+  <button id="start-btn">🎉 Start Celebration</button>
+  <button id="music-toggle" style="display: none;">🔊 Mute</button>
+  <!-- fireworks.js and music.js are in the js folder. -->
+  <script src="assets/js/fireworks.js"></script>
+  <script src="assets/js/music.js"></script>
+  <!-- GSAP latest -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
