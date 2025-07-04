@@ -30,8 +30,8 @@ This is a sweet and interactive web page made to celebrate a special anniversary
 -    │   ├── fireworks.js  # Canvas fireworks engine
 -    │   ├── music.js      # music and counts days
 -    │   └── script.js     # GSAP
--    └── music/
-    -     └── music.mp3  # Background music
+-    └── music/music.mp3  # Background music
+     
 
 
 
