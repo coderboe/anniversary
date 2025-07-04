@@ -15,7 +15,7 @@ This is a sweet and interactive web page made to celebrate a special anniversary
 - 🎨 Stylish with animated background and GSAP effects
 
 ## 📁 Project Structure
----
+
  anniversary/
 -    ├──README.md
 -    ├── index.html  # Main page
