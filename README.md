@@ -15,23 +15,23 @@ This is a sweet and interactive web page made to celebrate a special anniversary
 - 🎨 Stylish with animated background and GSAP effects
 
 ## 📁 Project Structure
-
-anniversary/
-├──README.md
-├── index.html  # Main page
-└── assets/
-    ├── css/
-    │   └── style.css  # Styling (pink theme, animations)
-    ├── images/
-    │   ├── love.jpg   # icon image
-    │   ├── bf.jpg     # Boyfriend image
-    │   └── gf.jpg     # Girlfriend image
-    ├── js/
-    │   ├── fireworks.js  # Canvas fireworks engine
-    │   ├── music.js      # music and counts days
-    │   └── script.js     # GSAP
-    └── music/
-        └── music.mp3  # Background music
+---
+- anniversary/
+- ├──README.md
+- ├── index.html  # Main page
+- └── assets/
+  -  ├── css/
+  -  │   └── style.css  # Styling (pink theme, animations)
+  -  ├── images/
+  -  │   ├── love.jpg   # icon image
+  -  │   ├── bf.jpg     # Boyfriend image
+  -  │   └── gf.jpg     # Girlfriend image
+  -  ├── js/
+  -  │   ├── fireworks.js  # Canvas fireworks engine
+  -  │   ├── music.js      # music and counts days
+  -  │   └── script.js     # GSAP
+  -  └── music/
+         └── music.mp3  # Background music
 
 
 
@@ -64,7 +64,7 @@ Simply open index.html in any modern browser (Chrome, Edge, Firefox).
 | GSAP Animations  | `index.html` or custom JS | Modify or add GSAP effects                          |
 
 ## 🔧 Dependencies
-- ![GSAP v3.12.5](https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js) – for animations
+- [GSAP v3.12.5](https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js) – for animations
 
 - No build tools required – pure HTML, CSS, JS
 
