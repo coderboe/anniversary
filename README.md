@@ -78,7 +78,7 @@ You can publish this on GitHub Pages or any static hosting service.
 
 3.Set source to main branch and /root
 
-4.Visit https://yourusername.github.io/anniversary/
+4.Visit https://coderboe.github.io/anniversary/
 
 ## ❤️ Credits
 Made with love by Lu Taw for Yunn 💑
