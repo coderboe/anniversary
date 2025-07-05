@@ -58,7 +58,7 @@ Simply open index.html in any modern browser (Chrome, Edge, Firefox).
 | ---------------- | ------------------------- | --------------------------------------------------- |
 | Names & Text     | `index.html`              | Edit the `<h1>`, `<p>`, etc.                        |
 | Photos           | `bf.jpg`, `gf.jpg`        | Replace with your own                               |
-| Start Date       | `index.html`              | Update: `const startDate = new Date("YYYY-MM-DD");` |
+| Start Date       | `music.js`                | Update: `const startDate = new Date("YYYY-MM-DD");` |
 | Music            | `music.mp3`               | Replace file but keep same name                     |
 | Fireworks Colors | `fireworks.js`            | Change array in `randomColor()`                     |
 | GSAP Animations  | `index.html` or custom JS | Modify or add GSAP effects                          |
@@ -72,6 +72,7 @@ Simply open index.html in any modern browser (Chrome, Edge, Firefox).
 You can publish this on GitHub Pages or any static hosting service.
 
 **GitHub Pages Quick Setup**
+
 1.Push this project to GitHub
 
 2.Go to your repo → Settings → Pages
